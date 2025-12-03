@@ -81,7 +81,7 @@ class UserManager {
 $logger = new ConsoleLogger();
 $emailSender = new ConsoleEmailSender();
 $userManager = new UserManager($logger, $emailSender);
-$userManager->addUser("John Doe", "john@example.com");
+$userManager->addUser("John Doe [new text]", "john@example.com");
 $userManager->addUser("Jane Smith", "jane@example.com");
 print_r($userManager->getAllUsers());
 $userManager->deleteUser(0);
